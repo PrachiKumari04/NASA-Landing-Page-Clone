@@ -1,0 +1,381 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background: rgba(26, 26, 26, 0.8);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s, transform 0.3s, font-size 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff9800;
+    transform: translateY(-5px);
+    font-size: 18px;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100%; /* Adjust the height to take up the full height of the hero section */
+}
+
+.hero {
+    background: url('images/bg.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 290px 20px; /* Increase padding to make the background image taller */
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.hero .btn:hover {
+    transform: scale(1.1);
+    background-color: #e68900;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+    background: #121212;
+}
+
+.missions {
+    
+    color: #ffffff;
+    padding: 50px 10px 10px; /* Adjust padding to create space between heading and images */
+    text-align: center; /* Center-align the section content */
+    position: relative; /* Add position relative to allow absolute positioning */
+}
+
+.missions h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center; /* Center-align the heading */
+    position: absolute; /* Position the heading absolutely */
+    top: 20px; /* Align the heading at the top */
+    left: 50%; /* Move the heading to the center horizontally */
+    transform: translateX(-50%); /* Adjust for center alignment */
+}
+
+.mission-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust spacing between missions */
+    gap: 20px;
+    text-align: left; /* Align the mission content to the left */
+    margin-top: 100px; /* Add margin to create space between heading and images */
+}
+
+.mission {
+    flex: 0 0 calc(33.33% - 20px); /* Set each mission to occupy one-third of the container */
+}
+
+.mission img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+    border-radius: 10px;
+    margin-bottom: 15px; /* Add some space at the bottom */
+}
+
+.mission h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.mission p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.mission .link {
+    color: #ff9800;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.mission .link:hover {
+    color: #e68900;
+}
+
+.gallery {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 70px 20px;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: left;
+    margin-right: 50px; /* Add space between text and edge */
+  }
+  
+
+.gallery p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 calc(100% - 40px);
+    }
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-between; /* Creates space between text and images */
+  }
+
+  .gallery-link {
+    display: block;
+    margin: 40px auto; /* Center the link */
+    color: #ff9800;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.gallery-link:hover {
+    color: #e68900;
+}
+
+
+
+.contact {
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+    color: #ffffff;
+    padding: 70px 20px; /* Adjust padding as needed */
+}
+
+.contact-form-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;  /* Center the form horizontally */
+    padding: 40px;  /* Add space around the form */
+    background-color: rgba(255, 255, 255, 0.1);  /* Transparent white background */
+    border-radius: 10px;  /* Rounded corners for the form container */
+  }
+
+  .social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-media li a img {
+    width: 30px; /* Adjust the width of the social media logos */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.social-media li {
+    display: inline-block;
+    margin-right: 10px; /* Add some space between the logos */
+}
+  
+  .social-media li a:hover i {
+    color: #ff9800;
+  }
+
+.contact form {
+    max-width: 600px; /* Limit the width of the form */
+    width: 100%;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+    width: 100%; /* Make input boxes full width */
+    padding: 15px; /* Increase padding for better visibility */
+    margin-bottom: 20px; /* Add spacing between input boxes */
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    color: #ffffff;
+}
+
+.contact form textarea {
+    min-height: 150px; /* Set a minimum height for the textarea */
+}
+
+.contact form button {
+    padding: 15px; 
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9800;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #e68900; /* Darker color on hover */
+}
+
+.about {
+    background: url('images/bgabout.webp') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 340px 300px;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+.about p {
+    font-size:38px; 
+    line-height: 1.6;
+  }
+
+
+.about .highlighted-text {
+    background: none; 
+    padding: 0; 
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background: rgba(26, 26, 26, 0.8);
+    padding: 10px 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff9800;
+    color: #ffffff;
+    cursor: pointer;
+}

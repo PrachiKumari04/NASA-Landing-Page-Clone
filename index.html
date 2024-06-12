@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Landing Page Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-title">
+                <img src="images/logo.jpg" alt="NASA Logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#missions">Missions</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Exploring the Universe</h2>
+            <p>Join us on our journey to explore the unknown and expand the frontiers of human knowledge.</p>
+            <a href="#missions" class="btn">Discover More</a>
+        </div>
+    </section>
+    
+    
+    
+
+    <section id="missions" class="missions">
+        <div class="container">
+          <h2>Our Missions</h2>
+          <div class="mission-container">
+            <div class="mission">
+              <img src="images/hubble.jpg" alt="Hubble Space Telescope">
+              <h3>Hubble Space Telescope</h3>
+              <p>The Hubble Space Telescope has been providing stunning images and invaluable data on the cosmos since its launch in 1990.</p>
+              <a href="https://www.nasa.gov/mission_pages/hubble/main/index.html" class="link">Know More</a>
+            </div>
+            <div class="mission">
+              <img src="images/apollo11.jpg" alt="Apollo 11">
+              <h3>Apollo 11: Moon Landing</h3>  <p>Apollo 11 was the first manned mission to land on the Moon in 1969, marking a significant milestone in space exploration.</p>
+              <a href="https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html" class="link">Know More</a>
+            </div>
+            <div class="mission">
+              <img src="images/mars_rover.jpg" alt="Mars Rover">
+              <h3>Mars Rovers</h3>  <p>The Mars Rovers, including Spirit, Opportunity, and Curiosity, have been exploring the Martian surface and providing valuable insights.</p>
+              <a href="https://mars.nasa.gov/" class="link">Know More</a>
+            </div>
+            <div class="mission">
+              <img src="images/james_webb.jpg" alt="James Webb Space Telescope">
+              <h3>James Webb Space Telescope</h3>
+              <p>The James Webb Space Telescope, launched in 2021, is the premier observatory of the next decade.</p>
+              <a href="https://www.jwst.nasa.gov/" class="link">Know More</a>
+            </div>
+            <div class="mission">
+              <img src="images/international_space_station.jpg" alt="International Space Station">
+              <h3>International Space Station (ISS)</h3>  <p>The ISS serves as a microgravity and space environment research laboratory in which scientific research is conducted in astrobiology, astronomy, meteorology, physics, and other fields.</p>
+              <a href="https://www.nasa.gov/mission_pages/station/main/index.html" class="link">Know More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+    
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/image1.jpg" alt="Gallery Image 1"></div>
+                <div class="gallery-item"><img src="images/image2.jpg" alt="Gallery Image 2"></div>
+                <div class="gallery-item"><img src="images/image3.jpg" alt="Gallery Image 3"></div>
+                <div class="gallery-item"><img src="images/image4.jpg" alt="Gallery Image 4"></div>
+                <div class="gallery-item"><img src="images/image5.jpg" alt="Gallery Image 5"></div>
+                <div class="gallery-item"><img src="images/image6.jpg" alt="Gallery Image 6"></div>
+            </div>
+        </div>
+        <a href="https://www.nasa.gov/multimedia/imagegallery/index.html" class="gallery-link" target="_blank">See more NASA photos</a>
+        </div>
+    
+    </section>
+    
+
+    
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <ul class="social-media">
+                <li><a href="https://www.facebook.com/NASA/" target="_blank"><img src="images/facebook_icon.png" ></a></li>
+                <li><a href="https://twitter.com/nasa" target="_blank"><img src="images/twitter_icon.webp" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com/nasa/?hl=en" target="_blank"><img src="images/instagram_icon.png" alt="Instagram"></a></li>
+            </ul>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            
+            <h3 class="highlighted-text"><p>NASA's vision is to reach for new heights and reveal the unknown for the benefit of humankind.</p></h3>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NASA Landing Page Clone. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
