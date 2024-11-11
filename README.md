@@ -1,4 +1,4 @@
-# SCT_WD_1
+
 
 # NASA Landing Page Clone
 
