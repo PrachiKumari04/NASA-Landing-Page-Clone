@@ -48,3 +48,14 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 This project is made by 
 Name- Prachi Kumari 
 Email- prachikumari2804@gmail.com
+
+
+![1](https://github.com/user-attachments/assets/8b4201f0-3878-46ac-bb87-149341668821)
+
+![2](https://github.com/user-attachments/assets/81d22e27-60a1-4652-a587-b7f927a7321a)
+
+![3](https://github.com/user-attachments/assets/4ca268f5-d374-4857-9115-cb8aaba48efe)
+
+![4](https://github.com/user-attachments/assets/7e431a40-6062-4b91-8981-ebb8fcb25683)
+
+![5](https://github.com/user-attachments/assets/8aad0bf4-d975-44ee-ace9-57990ee3f86b)
